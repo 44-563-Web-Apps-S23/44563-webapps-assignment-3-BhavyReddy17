@@ -52,5 +52,13 @@
                 <th>50</th>
             </tr>
         </table>
+        <hr>
+        <h3>Code snippet</h3>
+        <blockquote cite="https://stackoverflow.com/questions/10489895/http-to-https-through-htaccess">Force HTTPS</blockquote>
+        <pre>
+            RewriteEngine on
+            RewriteCond %{HTTPS} !on
+            RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+        </pre>
     </body>
 </html>
